@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+@font-face{
+	font-family: 'roboto'; 
+	src: url('../../Roboto/Roboto-Regular.ttf');
+}
+
+:root{
+    --cor-main: #5C7AEA;
+    --cor-secundaria: #98AAEE;
+    --cor-texto-menu:#F9F8F8;
+    --cor-logotipo:#506FE0;
+    --cor-tela:#FEFEFE;
+    --cor-texto-titulo:#353535;
+}
+
+body{
+    background-color: #FFFFFF;
+    background-image: url(../../img/wave.svg);
+    background-size: 3000px;
+    background-repeat: no-repeat;
+    display: flex;
+    
+}
+
+header{
+    width: 300px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#box-logo{
+    width: inherit;
+    height: 100px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    width: inherit;
+    height: 600px;
+    padding-top: 60px;
+}
+
+nav #box-opcoes-menu{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#box-opcoes-menu .opcoes-menu{
+    width: 210px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.opcoes-menu a{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    padding: 0px 0px 0px 30px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--cor-secundaria);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    color: var(--cor-texto-menu);
+    transition: 0.3s;
+}
+
+.opcoes-menu a:hover{
+    background-color: var(--cor-main);
+    cursor: pointer;
+}
+
+.box-imagem-menu{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.box-imagem-menu img{
+    width: inherit;
+    height: inherit;
+}
+
+a p{
+    font-family: 'roboto';
+}
+
+main{
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 900px;
+}
+
+main #box-tela{
+    width: 1300px;
+    height: 800px;
+    border-radius: 11px;
+    background-color: var(--cor-tela);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.20);
+}
+
+#box-tela #mensagem{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mensagem h1{
+    font-family: 'roboto';
+    font-size: 1.8rem;
+}
+
+#mensagem h2{
+    font-family: 'roboto';
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
