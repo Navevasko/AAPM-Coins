@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    font-family: 'roboto';
+    text-decoration: none;
+    list-style: none;
 }
 
 
-:root {
-    font-family: 'roboto';
+:root { 
     --main-color: #5C7AEA;
 }
 
@@ -16,12 +18,24 @@
 	src: url('../Roboto/Roboto-Regular.ttf');
 }
 
+.center-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btween-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 body {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../img/background.svg');
+    background-image: url('../img/Background.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -29,15 +43,13 @@ body {
 
 #glass-box {
     width: 960px;
-    height: 590px;
-    display: flex;
+    height: fit-content;
+    padding: 30px 10px;
     background: rgba( 255, 255, 255, 0.5 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 1.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    align-items: center;
-    justify-content: center;
 }
 
 #box-input {
@@ -120,6 +132,10 @@ h1 {
     background-color: var(--main-color);
 }
 
+#box-submit input:hover {
+    cursor: pointer;
+}
+
 #box-img-login, #box-img-cadastro {
     background-repeat: no-repeat;
     background-size: contain;
@@ -142,7 +158,6 @@ h1 {
 @media screen and (max-width: 768px) and (min-width: 320px){
     #glass-box {
         width: 85vw;
-        height: 500px;
         flex-direction: column;
     }
 
@@ -155,8 +170,8 @@ h1 {
         width: 200px;
         height: 200px;
         position: absolute;
-        top: 58vh;
-        left: -10vw;
+        top: 400px;
+        left: -40px;
     }
 
     #box-img-login {
@@ -169,8 +184,9 @@ h1 {
     }
 
     #box-img-login #img-Mobile, #box-img-cadastro #img-Mobile {
-        width: 100%;
-        height: 100%;
+        width: 170px;
+        height: 170px;
+        margin-left: 15px;
         display: block;
     }
 
@@ -202,12 +218,13 @@ h1 {
 
     .existing-account {
         position: absolute;
-        top: 60vh;
+        top: 425px;
+        margin-right: 5px;
     }
 
     .forgot-password {
         position: absolute;
-        top: 310px; 
+        top: 340px; 
     }
 
     #box-submit input {

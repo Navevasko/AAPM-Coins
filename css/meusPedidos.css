@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'roboto';
+    text-decoration: none;
+    list-style: none;
+}
+
+
+:root { 
+    --main-color: #5C7AEA;
+    --box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+@font-face{
+	font-family: 'roboto'; 
+	src: url('../Roboto/Roboto-Regular.ttf');
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    padding: 35px 0;
+}
+
+.center-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btween-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    width: inherit;
+    height: 90px;
+    box-shadow: 0 7px 10px #0001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    width: auto;
+    height: inherit;
+    margin-left: auto;
+    margin-right: 60px;
+}
+.limiter{
+    width: 1800px;
+    height: inherit;
+    padding: 0 35px;
+}
+#balance{
+    width: 120px;
+    height: inherit;
+    margin-right: 20px;
+}
+#menu-dropdown{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: lawngreen;
+}
+#menu{
+    gap:10px;
+}
+.menu-item{
+    width: auto;
+    height: auto;
+}
+
+#box-pedidos {
+    width: 1250px;
+    height: fit-content;
+    box-shadow: 4px 4px 10px var(--box-shadow);
+    border-radius: 15px;
+}
+
+#box-title {
+    position: sticky;
+    width: inherit;
+    height: 80px;
+    background-color: whitesmoke;
+    border-radius: 15px 15px 0 0;
+    box-shadow: inherit;
+    padding: 0 35px;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+#box-title h2{
+    font-weight: 300;
+    font-size: 1.6em;
+    color: var(--main-color);
+}
+
+#box-title h2:first-child {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    font-size: 2.2em;
+}
+
+#box-descricao {
+    width: inherit;
+    height: 450px;
+    background-color: whitesmoke;
+}
+
+#box-descricao tr {
+    background-color: khaki;
+}
