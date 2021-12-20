@@ -84,6 +84,7 @@ nav{
 }
 
 #box-pedidos {
+    margin-top: 150px;
     width: 1250px;
     height: fit-content;
     box-shadow: 4px 4px 10px var(--box-shadow);
