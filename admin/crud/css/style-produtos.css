@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+@font-face{
+	font-family: 'roboto'; 
+	src: url('../../../Roboto/Roboto-Regular.ttf');
+}
+
+:root{
+    --cor-main: #5C7AEA;
+    --cor-secundaria: #98AAEE;
+    --cor-texto-menu:#F9F8F8;
+    --cor-logotipo:#506FE0;
+    --cor-tela:#FEFEFE;
+    --cor-texto-titulo:#353535;
+}
+
+/* PADRÃO DA TELA */
+body{
+    background-color: #FFFFFF;
+    background-image: url(../../../img/wave.svg);
+    background-size: 3000px;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+header{
+    width: 350px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#box-logo{
+    width: inherit;
+    height: 100px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    width: inherit;
+    height: 600px;
+    padding-top: 60px;
+}
+
+nav #box-opcoes-menu{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#box-opcoes-menu .opcoes-menu{
+    width: 210px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.opcoes-menu a{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    padding: 0px 0px 0px 30px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--cor-secundaria);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    color: var(--cor-texto-menu);
+    transition: 0.3s;
+}
+
+.opcoes-menu a:hover{
+    background-color: var(--cor-main);
+    cursor: pointer;
+}
+
+.box-imagem-menu{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.box-imagem-menu img{
+    width: inherit;
+    height: inherit;
+}
+
+a p{
+    font-family: 'roboto';
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 900px;
+}
+
+main #box-tela{
+    width: 1300px;
+    height: 800px;
+    border-radius: 11px;
+    background-color: var(--cor-tela);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.20);
+}
+
+/* PADRÃO DA TELA TERMINA AQUI */
+
+/* CONTEUDO DESTINADO A TELA CENTRAL */
+
+/*formula´rio*/
+#box-tela #box-funcionarios{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+#box-form-cadastro{
+    width: 360px;
+    height: 400px;
+}
+
+#box-form-cadastro .titulo{
+    width: inherit;
+    height: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo h1{
+    text-align: center;
+    font-family: 'roboto';
+    font-size: 1.7rem;
+}
+
+#form-cadastro-produtos{
+    width: 400px;
+    height: 700px;
+}
+
+.box-input-dados{
+    width: inherit;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-preco-desconto{
+    width: inherit;
+    height: 70px;
+    display: flex;
+}
+
+.box{
+    width: 150px;
+    height: inherit;
+}
+
+.inp-texto{
+    font-family: 'roboto';
+    font-size: 1.5rem;
+}
+
+#inp-nome-produto{
+    width: 322px;
+    height: 30px;
+}
+
+#inp-preco, #inp-desconto{
+    width: 137px;
+    height: 30px;
+}
+
+#inp-texto-check{
+    font-family: 'roboto';
+    font-size: 0.8rem;
+}
+
+#text-area{
+    width: 300px;
+    height: 70px;
+}
+
+#box-button{
+    margin-top: 20px;
+    width: inherit;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+#btn-entrar{
+    width: 133px;
+    height: 40px;
+    background-color: var(--cor-main);
+    font-family: 'roboto';
+    font-size: 1.1rem;
+    color: var(--cor-texto-menu);
+    outline: none;
+    border: 0;
+    border-radius: 3px;
+}
+/*formulário*/
+
+/*listagem*/
+#box-listagem-produtos{
+    width: 560px;
+    height: 734px;
+}
+
+#box-table{
+    width: 100%;
+    min-height: 30px;
+    height: auto;
+    margin: 30px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-linha{
+    width: 80%;
+    height: 30px;
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome-produto{
+    width: 50%;
+    height: 30px;
+    font-family: 'roboto';
+    background-color: #F9F8F8;
+    border-radius: 6px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nome-produto p{
+    font-size: 1rem;
+}
+
+.img-preview{
+    width: 30px;
+    height: inherit;
+    margin: 0px 25px 0px 0px;
+}
+
+.img-preview img{
+    width: inherit;
+    height: inherit;
+}
+
+.preco-produto{
+    width: 13%;
+    height: inherit;
+    font-family: 'roboto';
+    background-color: #F9F8F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px 0px 8px;
+}
+
+.opcoes-produto{
+    width: 20%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcoes-produto img{
+    width: 30px;
+    height: inherit;
+    margin: 0px 0px 0px 5px;
+}
+/*listagem*/
+
+/* CONTEUDO DESTINADO A TELA CENTRAL TERMINA AQUI */
+
+/* MEDIA QUERY MOBILE*/
+@media only screen and (max-width: 768px)  and (min-width: 320px)
+{
+    body{
+        flex-direction: column;
+        background-position: top;
+        background-size: 1350px;
+    }
+    header{
+        width: 100%;
+        min-width: 360px;
+        max-width: 768px;
+        height: 200px;
+        position: relative;
+    }
+    #box-logo{
+        width: inherit;
+        height: 60px;
+        margin-top: 80px;
+        display: flex;
+        padding-left: 10px;
+        justify-content: initial;
+    }
+    #box-logo img{
+        width: 180px;
+        height: 50px;
+    }
+    #box-opcoes-menu .opcoes-menu{
+        width: 50px;
+        margin-top: 0px;
+    }
+    .opcoes-menu a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0px 0px 0px 0px;
+    }
+    nav{
+        height: 60px;
+        padding-top: 0px;
+        position: absolute;
+    }
+    nav #box-opcoes-menu{
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: var(--cor-main);
+        box-shadow: 0px 3.0204px 15.102px rgba(0, 0, 0, 0.15);
+    }
+    a p{
+        display: none;
+    }
+    .box-imagem-menu{
+        width: 30px;
+        height: 20px;
+        padding-right: 0px;
+    }
+    main{
+        flex-grow: 1;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        min-height: 640px;
+    }
+    main #box-tela{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        min-height: 640px;
+        border-radius: 0px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    #box-tela #box-funcionarios{
+        flex-direction: column;
+        padding: 0px;
+    }
+    
+    #box-form-cadastro{
+        width: 360px;
+        height: 400px;
+        margin: 30px 0px 30px 0px;
+    }
+
+    #form-cadastro-funcionario{
+        width: 400px;
+        height: 391px;
+    }
+    
+    .inp-dados{
+        width: 85%;
+        height: 40px;
+    }
+    
+    .inp-texto{
+        font-family: 'roboto';
+        font-size: 1.5rem;
+    }
+    
+    #box-titulo{
+        margin: 10px 0px 30px 0px;
+    }
+    
+    #box-inputs{
+        width: inherit;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    
+    #box-button{
+        width: 340px;
+        height: 90px;
+        display: flex;
+        justify-content: end;
+    }
+
+    .box-input-dados{
+        width: inherit;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1px;
+        padding-left: 20px;
+    }
+    /*formulário*/
+    
+    /*listagem*/
+    #box-listagem-funcionarios{
+        width: 360px;
+        height: 730px;
+    }
+    
+    table{
+        width: 100%;
+        min-height: 30px;
+        height: auto;
+        margin: 30px 0px 0px 6px;
+    }
+    
+    tr{
+        width: 90%;
+        height: 30px;
+        border: solid 3px black;
+    }
+    
+    .nome{
+        border-radius: 6px;
+        font-family: 'roboto';
+        background-color: #F9F8F8;
+        text-align: center;
+    }
+    
+    .imagem{
+        width: 40px;
+        height: 40px;
+    }
+
+    td{
+        width: 100px;
+        height: 30px;
+    }
+    
+    td img{
+        padding: 5px 0px 0px 10px;
+        width: 40px;
+        height: 30px;
+    }
+}
